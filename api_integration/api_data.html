@@ -1,0 +1,16 @@
+<!-- api_integration/templates/api_integration/api_data.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>API Data</title>
+</head>
+<body>
+<h1>API Data</h1>
+{% if api_data %}
+<pre>{{ api_data|safe }}</pre>
+{% else %}
+<p>Failed to fetch data from the API.</p>
+{% endif %}
+</body>
+</html>
